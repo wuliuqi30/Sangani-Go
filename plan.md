@@ -1,9 +1,4 @@
-# Sangani-Go
-A landing page for Hersh Sangani's Go Teaching Website
-
-This task is in completion of the Landing Page project for the Odin Project.
-
-The landing page is essentially broken down into five parts:
+A brief outline of my webpage: 
 
 1 A top header bar with links.
 
@@ -16,4 +11,11 @@ The landing page is essentially broken down into five parts:
 5 An invitation to sign up or to subscribe.
 
 
+Plan: 
+1 Copy the demo page for the initial structure. 
 
+2 Add in personalization for a Go Teaching Website
+
+overall structure:
+
+1st Iteration: try 5 flexboxes
