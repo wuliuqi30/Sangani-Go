@@ -10,9 +10,6 @@ body{
     align-items: center;
 }
 
-
-
-
 .logo{
     font-weight: 600;
     font-size: 30px;
@@ -34,14 +31,7 @@ a{
   
   }
 
-.section1, .section2, .section3, .section4{
-    display:flex;
-    flex:0 0 auto;
-}
-
-
 .section2{
-
     background-color: white;
     height: 200px; 
 }
@@ -58,31 +48,33 @@ a{
 
 
 .section1{
+    
     columns: white;
     background-color: #1f2937;
-
-    display:flex;
+    padding: 100px;
+    /* display:flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
 }
 
 .section1container{
     display:flex;
-    justify-content: center;
     gap:10px;
-    margin:60px;
-
-
+    align-items: flex-start;
+    justify-content: center;
+    min-width: fit-content;
 }
 
 
 .herocontainer{
-    display:flex;
+    /* display:flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
     color: #E5e7eb;
     font-size: 18px;
-    width:400px;
+    height: 240px;
+    width:366px;
+    flex:0 0 auto;
 }
 
 .heromain{
@@ -90,4 +82,14 @@ a{
     font-weight:bolder;
     color: #f9faf8;
     margin:0;
+}
+
+button{
+    width:120px;
+    background-color: #0000ff;
+    color: #fff;
+    padding:4px;
+    font-weight: 800;
+    border-radius: 5px;
+
 }
