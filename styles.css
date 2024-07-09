@@ -1,11 +1,17 @@
 /* CSS FILE */
 
-.header{
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+.header, .footer{
     display:flex;
-    background-color: rgb(215, 146, 17);
-    color: black;
+    background-color: #1f2937;
+    color: white;
     align-items: center;
 }
+
+
+
 
 .logo{
     font-weight: 600;
@@ -22,26 +28,66 @@
 
 }
 
+a{
+    color: #fff;
+    text-decoration: none;
+  
+  }
+
 .section1, .section2, .section3, .section4{
     display:flex;
     flex:0 0 auto;
 }
-.section1{
-    background-color: aliceblue;
-    height: 200px; 
-}
+
 
 .section2{
+
     background-color: white;
     height: 200px; 
 }
 
 .section3{
-    background-color: grey;
+    background-color: #E5e7eb;
     height: 300px; 
 }
 
 .section4{
     background-color: white;
     height: 100px; 
+}
+
+
+.section1{
+    columns: white;
+    background-color: #1f2937;
+
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.section1container{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    margin:60px;
+
+
+}
+
+
+.herocontainer{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color: #E5e7eb;
+    font-size: 18px;
+    width:400px;
+}
+
+.heromain{
+    font-size: 48px;
+    font-weight:bolder;
+    color: #f9faf8;
+    margin:0;
 }
