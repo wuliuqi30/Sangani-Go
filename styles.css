@@ -136,12 +136,14 @@ button{
 
 }
 .quote-box{
-    width:400px;
+    width:700px;
     margin:auto;
 }
 .epic-quote{
     color: #1f2937;
-    font-style: light-italic;
+    font-style:italic;
+    font-size: 36px;
+    font-weight: lighter;
 
 }
 
