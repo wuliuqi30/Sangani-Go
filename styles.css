@@ -1,13 +1,21 @@
 /* CSS FILE */
 
 body{
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Times New Roman', Courier, monospace;
+    margin:auto;
+}
+
+p{
+    margin:0;
 }
 .header, .footer{
     display:flex;
     background-color: #1f2937;
     color: white;
     align-items: center;
+    padding-left:50px;
+    padding-right: 50px;
+   
 }
 
 .logo{
@@ -22,38 +30,32 @@ body{
     list-style-type: none;
     margin-left: auto;
     padding: 10px;
+    
 
 }
 
 a{
     color: #fff;
     text-decoration: none;
+    white-space: nowrap;
   
   }
 
-.section2{
-    background-color: white;
-    height: 200px; 
-}
 
-.section3{
-    background-color: #E5e7eb;
-    height: 300px; 
-}
 
-.section4{
-    background-color: white;
-    height: 100px; 
-}
+
+
 
 
 .section1{
     
     columns: white;
     background-color: #1f2937;
-    padding: 100px;
+    padding: 50px;
+
+
     /* display:flex;
-    justify-content: space-around;
+    
     align-items: center; */
 }
 
@@ -72,7 +74,7 @@ a{
     justify-content: space-evenly; */
     color: #E5e7eb;
     font-size: 18px;
-    height: 240px;
+    height: 260px;
     width:366px;
     flex:0 0 auto;
 }
@@ -86,10 +88,89 @@ a{
 
 button{
     width:120px;
-    background-color: #0000ff;
+    background-color: #3882f6;
     color: #fff;
     padding:4px;
     font-weight: 800;
     border-radius: 5px;
+}
+
+.section2{
+    background-color: white;
+    padding:50px;
+    height: auto;
+    margin:auto;
+    min-width: fit-content;
+}
+
+.section2title{
+    font-size: 36px;
+    font-weight: 900;
+    color:#1f2937;
+    text-align: center;
+    margin:50px;
+}
+
+.random-info-blocks-container{
+    display:flex;
+    flex:0 0 auto;
+
+    justify-content: center;
+    gap:80px;
+}
+
+.random-info-block{
+
+    width:110px;
+    height:auto;
+    min-width: 100px;
+}
+
+
+
+.section3{
+    background-color: #E5e7eb;
+    height: auto; 
+    padding:100px;
+    
 
 }
+.quote-box{
+    width:400px;
+    margin:auto;
+}
+.epic-quote{
+    color: #1f2937;
+    font-style: light-italic;
+
+}
+
+.quote-person{
+    color: black;
+    font-weight: 600;
+    text-align: right;
+}
+
+.section4{
+    background-color: white;
+    height: auto;
+    padding:75px;
+    margin: auto;
+}
+
+.signup-box{
+    background-color: #3882f6;
+    font-family: 'Times New Roman', Courier, monospace;
+    color:#fff;
+    margin:auto;
+    height:100px;
+    display:flex;
+    flex:0 0 auto;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 5px;
+    max-width: fit-content;
+}
+
