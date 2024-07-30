@@ -1,178 +1,46 @@
-/* CSS FILE */
-
-body{
-    font-family: 'Times New Roman', Courier, monospace;
-    margin:auto;
-}
-
-p{
-    margin:0;
-}
-.header, .footer{
-    display:flex;
-    background-color: #1f2937;
-    color: white;
-    align-items: center;
-    padding-left:50px;
-    padding-right: 50px;
-   
-}
-
-.logo{
-    font-weight: 600;
-    font-size: 30px;
-}
-
-.links{
-    display:flex;
-    color: inherit;
-    gap:8px;
-    list-style-type: none;
-    margin-left: auto;
-    padding: 10px;
-    
+:root{
+  --grid-width: 10px;
+  --stone-diameter: calc(var(--grid-width) - 1px);
+  --stone-x: 3;
+  --stone-y: 4;
 
 }
 
-a{
-    color: #fff;
-    text-decoration: none;
-    white-space: nowrap;
+.container {
+    display: grid;
+    grid-template-columns: repeat(18,var(--grid-width));
+    grid-template-rows: repeat(18,var(--grid-width));
+    position:relative;
+  }
   
+  .container > div {
+    box-sizing: border-box;
+    border: 0.5px solid rgb(0, 0, 0);
+    background-color: rgb(243, 214, 179);
+    width: var(--grid-width);
+    height: var(--grid-width);
   }
 
+  .container > div.stone1 {
+    box-sizing: border-box;
+    border: 0.5px solid rgb(0, 0, 0);
+    border-radius:50%;
+    background-color: rgb(255, 255, 255);
+    width: var(--stone-diameter);
+    height: var(--stone-diameter);
+    position:absolute;
+    top:calc(-0.5 * var(--stone-diameter) + (var(--stone-y) - 1) * var(--grid-width));
+    left: calc(-0.5 * var(--stone-diameter) + (var(--stone-x) - 1) * var(--grid-width));
+  }
 
-
-
-
-
-
-.section1{
-    
-    columns: white;
-    background-color: #1f2937;
-    padding: 50px;
-
-
-    /* display:flex;
-    
-    align-items: center; */
-}
-
-.section1container{
-    display:flex;
-    gap:10px;
-    align-items: flex-start;
-    justify-content: center;
-    min-width: fit-content;
-}
-
-
-.herocontainer{
-    /* display:flex;
-    flex-direction: column;
-    justify-content: space-evenly; */
-    color: #E5e7eb;
-    font-size: 18px;
-    height: 260px;
-    width:366px;
-    flex:0 0 auto;
-}
-
-.heromain{
-    font-size: 48px;
-    font-weight:bolder;
-    color: #f9faf8;
-    margin:0;
-}
-
-button{
-    width:120px;
-    background-color: #3882f6;
-    color: #fff;
-    padding:4px;
-    font-weight: 800;
-    border-radius: 5px;
-}
-
-.section2{
-    background-color: white;
-    padding:50px;
-    height: auto;
-    margin:auto;
-    min-width: fit-content;
-}
-
-.section2title{
-    font-size: 36px;
-    font-weight: 900;
-    color:#1f2937;
-    text-align: center;
-    margin:50px;
-}
-
-.random-info-blocks-container{
-    display:flex;
-    flex:0 0 auto;
-
-    justify-content: center;
-    gap:80px;
-}
-
-.random-info-block{
-
-    width:110px;
-    height:auto;
-    min-width: 100px;
-}
-
-
-
-.section3{
-    background-color: #E5e7eb;
-    height: auto; 
-    padding:100px;
-    
-
-}
-.quote-box{
-    width:700px;
-    margin:auto;
-}
-.epic-quote{
-    color: #1f2937;
-    font-style:italic;
-    font-size: 36px;
-    font-weight: lighter;
-
-}
-
-.quote-person{
-    color: black;
-    font-weight: 600;
-    text-align: right;
-}
-
-.section4{
-    background-color: white;
-    height: auto;
-    padding:75px;
-    margin: auto;
-}
-
-.signup-box{
-    background-color: #3882f6;
-    font-family: 'Times New Roman', Courier, monospace;
-    color:#fff;
-    margin:auto;
-    height:100px;
-    display:flex;
-    flex:0 0 auto;
-    padding: 15px;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    border-radius: 5px;
-    max-width: fit-content;
-}
-
+  .container > div.stone2 {
+    box-sizing: border-box;
+    border: 0.5px solid rgb(0, 0, 0);
+    border-radius:50%;
+    background-color: rgb(0, 0, 0);
+    width: var(--stone-diameter);
+    height: var(--stone-diameter);
+    position:absolute;
+    top:calc(-0.5 * var(--stone-diameter) + (3 - 1) * var(--grid-width));
+    left: calc(-0.5 * var(--stone-diameter) + (5 - 1) * var(--grid-width));
+  }
